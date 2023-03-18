@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">TimeCalculator By AnecFox</string>
+    <string name="time_not_selected">Время не выбрано</string>
+    <string name="from">От</string>
+    <string name="to">До</string>
+    <string name="select_first_time">Выбрать первое время</string>
+    <string name="select_second_time">Выбрать второе время</string>
+    <string name="calculate">Рассчитать</string>
+    <string name="result">Результат</string>
+    <string name="title_activity_settings">О приложении</string>
+
+    <!-- Preference Titles -->
+    <string name="version_header">Версия</string>
+    <string name="version">0.1.4</string>
+
+    <!-- Words -->
+    <string name="hour_word_1">час</string>
+    <string name="hour_word_2">часа</string>
+    <string name="hour_word_3">часов</string>
+    <string name="minute_word_1">минута</string>
+    <string name="minute_word_2">минуты</string>
+    <string name="minute_word_3">минут</string>
+</resources>

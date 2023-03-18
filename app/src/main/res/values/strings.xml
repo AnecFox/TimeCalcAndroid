@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">TimeCalculator By AnecFox</string>
+    <string name="time_not_selected">Time not selected</string>
+    <string name="from">From</string>
+    <string name="to">To</string>
+    <string name="select_first_time">Select first time</string>
+    <string name="select_second_time">Select second time</string>
+    <string name="calculate">Calculate</string>
+    <string name="result">Result</string>
+    <string name="title_activity_settings">About app</string>
+
+    <!-- Preference Titles -->
+    <string name="version_header">Version</string>
+    <string name="version">0.1.4</string>
+
+    <!-- Words -->
+    <string name="hour_word_1">hour</string>
+    <string name="hour_word_2">hours</string>
+    <string name="hour_word_3">hours</string>
+    <string name="minute_word_1">minute</string>
+    <string name="minute_word_2">minutes</string>
+    <string name="minute_word_3">minutes</string>
+</resources>

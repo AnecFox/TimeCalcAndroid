@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewFrom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/from"
+        android:textSize="21sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView1"
+        app:layout_constraintEnd_toEndOf="@+id/textView1"
+        app:layout_constraintStart_toStartOf="@+id/textView1" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/time_not_selected"
+        android:textSize="21sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonSelectFirstTime"
+        app:layout_constraintEnd_toEndOf="@+id/buttonSelectFirstTime"
+        app:layout_constraintStart_toStartOf="@+id/buttonSelectFirstTime" />
+
+    <Button
+        android:id="@+id/buttonSelectFirstTime"
+        android:layout_width="255dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="78dp"
+        android:layout_marginEnd="78dp"
+        android:layout_marginBottom="64dp"
+        android:onClick="showFirstTimePickerDialog"
+        android:text="@string/select_first_time"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewTo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/to"
+        android:textSize="21sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/time_not_selected"
+        android:textSize="21sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonSelectSecondTime"
+        app:layout_constraintEnd_toEndOf="@+id/buttonSelectSecondTime"
+        app:layout_constraintStart_toStartOf="@+id/buttonSelectSecondTime" />
+
+    <Button
+        android:id="@+id/buttonSelectSecondTime"
+        android:layout_width="255dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="78dp"
+        android:layout_marginEnd="78dp"
+        android:layout_marginBottom="48dp"
+        android:onClick="showSecondTimePickerDialog"
+        android:text="@string/select_second_time"
+        app:layout_constraintBottom_toTopOf="@+id/textViewResult"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="48dp"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/buttonCalculate"
+        app:layout_constraintEnd_toEndOf="@+id/buttonCalculate"
+        app:layout_constraintStart_toStartOf="@+id/buttonCalculate" />
+
+    <Button
+        android:id="@+id/buttonCalculate"
+        android:layout_width="255dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="78dp"
+        android:layout_marginEnd="78dp"
+        android:layout_marginBottom="128dp"
+        android:text="@string/calculate"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
