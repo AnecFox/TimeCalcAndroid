@@ -11,7 +11,7 @@
 
     <!-- Preference Titles -->
     <string name="version_header">Версия</string>
-    <string name="version">0.1.4</string>
+    <string name="version">0.1.5</string>
 
     <!-- Words -->
     <string name="hour_word_1">час</string>

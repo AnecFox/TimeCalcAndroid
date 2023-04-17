@@ -11,8 +11,7 @@ class TimeCalculator {
         val firstTimeMinutes: Int = firstTimeList[1].toInt()
 
         val firstDateTime: LocalDateTime = LocalDateTime.of(
-            LocalDateTime.now().year, LocalDateTime.now().month,
-            LocalDateTime.now().dayOfMonth, firstTimeHours, firstTimeMinutes
+            2023, 4, 16, firstTimeHours, firstTimeMinutes
         )
 
         val secondTimeList: List<String> = secondTime.split(":")
@@ -20,12 +19,12 @@ class TimeCalculator {
         val secondTimeMinutes: Int = secondTimeList[1].toInt()
 
         val secondDateTime = LocalDateTime.of(
-            LocalDateTime.now().year,
-            LocalDateTime.now().month,
+            firstDateTime.year,
+            firstDateTime.month,
             if (secondTimeHours < firstTimeHours ||
                 (secondTimeMinutes < firstTimeMinutes && secondTimeHours == firstTimeHours)
             )
-                LocalDateTime.now().dayOfMonth + 1 else LocalDateTime.now().dayOfMonth,
+                firstDateTime.dayOfMonth + 1 else firstDateTime.dayOfMonth,
             secondTimeHours,
             secondTimeMinutes
         )
